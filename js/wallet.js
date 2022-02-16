@@ -6,6 +6,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
    const foodValue = foodField.value;
    const rentValue = rentField.value;
    const clotheValue = clotheField.value;
+ 
    const totalExpense = document.getElementById('t-expenses');
    const totalExpenseValue = totalExpense.innerText
    totalExpense.innerText = parseInt(foodValue)+parseInt(rentValue)+parseInt(clotheValue);
@@ -15,8 +16,5 @@ document.getElementById('btn-submit').addEventListener('click', function(){
    const balanceField = document.getElementById('bamount');
    const incomeValue = incomeField.value;
    const balanceValue = balanceField.innerText;
-   balanceField.innerText = parseInt(incomeField.value)-parseInt(totalExpense.innerText);
-
-  
-}
-)
+   balanceField.innerText = parseInt(incomeField.value)-parseInt(foodValue)-parseInt(rentValue)-parseInt(clotheValue);
+})
