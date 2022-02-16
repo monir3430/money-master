@@ -1,0 +1,14 @@
+.graph img{
+width: 705px;
+height: 100%;
+}
+.size{
+    width: 80px;
+}
+.btn-size{
+    width: 110px;
+    height: 33px;
+}
+.bgcolor{
+    background-color: rgb(219, 224, 230);
+}
