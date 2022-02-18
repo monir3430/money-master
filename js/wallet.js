@@ -21,7 +21,17 @@ document.getElementById('sbutton').addEventListener('click', function(){
    let savingField = document.getElementById('sfield');
    const incomeField = document.getElementById('iamount');
    const incomeFieldValue = incomeField.value == ''?0 : incomeField.value;
-
+   let remainingBalance = document.getElementById('rbalance');
+   
    let savingAmount = document.getElementById('sresult');
+   let savingAmountValue = savingAmount.innerText;
    savingAmount.innerText = parseInt(incomeFieldValue)*parseInt(savingField.value)/100;
+   const balanceField = document.getElementById('bamount');
+   remainingBalance.innerText = balanceField.innerText-savingAmount.innerText;
 });
+
+// try {
+//    if( value == )
+// } catch () {
+   
+// }
