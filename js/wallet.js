@@ -3,9 +3,9 @@ document.getElementById('btn-submit').addEventListener('click', function(){
    const foodField = document.getElementById('famount');
    const rentField = document.getElementById('ramount');
    const clotheField = document.getElementById('camount');
-   const foodValue = foodField.value;
-   const rentValue = rentField.value;
-   const clotheValue = clotheField.value;
+   const foodValue = foodField.value == ''? 0 :foodField.value;
+   const rentValue = rentField.value == ''? 0 : rentField.value;
+   const clotheValue = clotheField.value == ''? 0 : clotheField.value;
  
    const totalExpense = document.getElementById('t-expenses');
    const totalExpenseValue = totalExpense.innerText
